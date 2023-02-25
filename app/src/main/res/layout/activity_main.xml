@@ -24,8 +24,8 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="244dp"
-        android:layout_height="53dp"
+        android:layout_width="238dp"
+        android:layout_height="50dp"
         android:ems="10"
         android:hint="Enter item ..."
         android:inputType="textPersonName"
@@ -51,38 +51,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.065" />
 
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="95dp"
-        android:layout_height="42dp"
-        android:background="#f00"
-        android:text="Delete"
-        android:textColor="#ffffff"
-        android:textSize="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.039"
-        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
-
-    <Button
-        android:id="@+id/edit"
-        android:layout_width="70dp"
-        android:layout_height="42dp"
-        android:background="#ff0"
-        android:text="Edit"
-        android:textColor="#ffffff"
-        android:textSize="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.586"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.039"
-        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
-
     <LinearLayout
         android:id="@+id/linerLay"
         android:layout_width="370dp"
@@ -94,44 +62,52 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.942" />
+        app:layout_constraintVertical_bias="0.942" >
+
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left"
-        app:constraint_referenced_ids="linerLay,editText" />
+        app:constraint_referenced_ids="linerLay,editText"
+        tools:layout_editor_absoluteX="20dp" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left"
-        app:constraint_referenced_ids="linerLay" />
+        app:constraint_referenced_ids="linerLay"
+        tools:layout_editor_absoluteX="21dp" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left"
-        app:constraint_referenced_ids="linerLay" />
+        app:constraint_referenced_ids="linerLay"
+        tools:layout_editor_absoluteX="21dp" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left"
-        app:constraint_referenced_ids="linerLay" />
+        app:constraint_referenced_ids="linerLay"
+        tools:layout_editor_absoluteX="21dp" />
 
     <androidx.constraintlayout.helper.widget.Layer
         android:id="@+id/layer"
-        android:layout_width="373dp"
-        android:layout_height="524dp"
+        android:layout_width="388dp"
+        android:layout_height="533dp"
         app:constraint_referenced_ids="linerLay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
